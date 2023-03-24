@@ -36,7 +36,7 @@ function presentQuestion(question) {
     console.log(`${index + 1}. ${choice}`);
   });
 }
-
+  
 function handleAnswer(question, answer, score) {
   if (question.answer === question.multipleChoices[answer]) {
     score++;
@@ -46,7 +46,7 @@ function handleAnswer(question, answer, score) {
   }
   return score;
 }
-
+ 
 function runQuiz(questions) {
   let score = 0;
   let remainingQuestions = [...questions];
